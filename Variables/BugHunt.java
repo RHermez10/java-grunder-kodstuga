@@ -1,3 +1,5 @@
+package Variables;
+
 public class BugHunt {
     public static void main(String[] args) {
         String name = "Ada";

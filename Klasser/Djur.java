@@ -1,3 +1,5 @@
+package Klasser;
+
 public class Djur {
     String ljud;
 

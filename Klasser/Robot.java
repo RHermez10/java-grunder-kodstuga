@@ -1,3 +1,5 @@
+package Klasser;
+
 public class Robot {
     String name;
     private int batteri;

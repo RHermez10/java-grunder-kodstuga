@@ -1,3 +1,5 @@
+package Variables;
+
 public class PersonCard {
     public static void main(String[] args) {
         // Creating Variables

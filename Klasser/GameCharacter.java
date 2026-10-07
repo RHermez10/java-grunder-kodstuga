@@ -1,3 +1,4 @@
+package Klasser;
 
 public class GameCharacter {
 
