@@ -6,11 +6,11 @@ public class Hero {
 
     private int points;
 
-    int getPoints() {
+    public int getPoints() {
         return points;
     }
 
-    void setPoints(int points) {
+    public void setPoints(int points) {
         this.points = points;
     }
 
@@ -27,14 +27,12 @@ public class Hero {
         newHero.setPoints(sum);
 
         System.out.println("This is your total points: " + newHero.getPoints());
-
-        highestPoint(pointsValues);
+        System.out.println("The Highest points you can get: " + highestPoint(pointsValues));
     }
 
     // METOD SOM GER HÖGSTA POÄNG
-    static void highestPoint(int[] pointsValues) {
+    static int highestPoint(int[] pointsValues) {
         Arrays.sort(pointsValues);
-        System.out.println("The Highest points you can get: " + pointsValues[pointsValues.length - 1]);
-
+        return pointsValues[pointsValues.length - 1];
     }
 }
