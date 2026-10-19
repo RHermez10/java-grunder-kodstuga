@@ -28,6 +28,7 @@ class Oak extends Trees {
         super(height);
     }
 
+    @Override
     void describe() {
 
         System.out.println("Oak is: " + height + "cm");

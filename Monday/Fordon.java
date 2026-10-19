@@ -25,7 +25,7 @@ interface Drivable {
 }
 
 class Car implements Drivable {
-
+    @Override
     public void drive() {
         System.out.println("Driving the car");
     }
@@ -33,6 +33,7 @@ class Car implements Drivable {
 }
 
 class Bicycle implements Drivable {
+    @Override
     public void drive() {
         System.out.println("Riding the bicycle");
 
@@ -40,7 +41,7 @@ class Bicycle implements Drivable {
 }
 
 class Scooter implements Drivable {
-
+    @Override
     public void drive() {
         System.out.println("Riding the scooter");
     }

@@ -1,17 +1,16 @@
-package Monday;
+package Monday.Ovning4;
 
 public class Talent {
 
     public static void main(String[] args) {
 
-        Animals dog = new Monkey();
-        Animals cat = new Shark();
+        Animals dog = new Dog();
+        Animals cat = new Cat();
 
         dog.makeSound();
         cat.makeSound();
 
-        showTalent(new Monkey());
-
+        showTalent((Playable) dog);
     }
 
     public static void showTalent(Playable participant) {
@@ -29,7 +28,7 @@ interface Playable {
     void play();
 }
 
-class Monkey extends Animals implements Playable {
+class Dog extends Animals implements Playable {
 
     public void makeSound() {
         System.out.println("Woof Woof");
@@ -41,7 +40,7 @@ class Monkey extends Animals implements Playable {
 
 }
 
-class Shark extends Animals {
+class Cat extends Animals {
 
     public void makeSound() {
         System.out.println("MEOOWW");
