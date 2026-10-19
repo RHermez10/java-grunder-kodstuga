@@ -1,19 +1,27 @@
 package Monday;
 
-public class TalentShow {
+public class Talent {
 
     public static void main(String[] args) {
 
-        Animal dog = new Dog();
-        Animal cat = new Cat();
+        Animals dog = new Monkey();
+        Animals cat = new Shark();
 
         dog.makeSound();
         cat.makeSound();
+
+        showTalent(new Monkey());
+
+    }
+
+    public static void showTalent(Playable participant) {
+        participant.play();
+
     }
 
 }
 
-abstract class Animal {
+abstract class Animals {
     public abstract void makeSound();
 }
 
@@ -21,7 +29,7 @@ interface Playable {
     void play();
 }
 
-class Dog extends Animal implements Playable {
+class Monkey extends Animals implements Playable {
 
     public void makeSound() {
         System.out.println("Woof Woof");
@@ -33,7 +41,7 @@ class Dog extends Animal implements Playable {
 
 }
 
-class Cat extends Animal {
+class Shark extends Animals {
 
     public void makeSound() {
         System.out.println("MEOOWW");
